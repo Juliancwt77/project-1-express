@@ -21,79 +21,99 @@ $(document).ready(function() {
   var $right = $('.right h1')
 
 
-
   $td1.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('bulbasaur');
-    $right.text('Bulbasaur');
-    $pokemonImg.removeClass('pokemon').addClass('bulbasaurBattle');
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('bulbasaur');
+   $right.text('Bulbasaur');
+   $pokemonImg.removeClass('pokemon').addClass('bulbasaurBattle');
 
 
 
-  });
+ });
 
-  $td2.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('tepig');
-    $right.text('Tepig');
-    $pokemonImg.removeClass('pokemon').addClass('tepigBattle');
-
-
-  });
-
-  $td4.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('eevee');
-    $right.text('Eevee');
-    $pokemonImg.removeClass('pokemon').addClass('eeveeBattle');
+ $td2.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('tepig');
+   $right.text('Tepig');
+   $pokemonImg.removeClass('pokemon').addClass('tepigBattle');
 
 
-  });
+ });
 
-  $td7.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('jigglypuff');
-    $right.text('Jigglypuff');
-    $pokemonImg.removeClass('pokemon').addClass('jigglypuffBattle');
-
-
-  });
-
-  $td9.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('gengar');
-    $right.text('Gengar');
-    $pokemonImg.removeClass('pokemon').addClass('gengarBattle');
+ $td4.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('eevee');
+   $right.text('Eevee');
+   $pokemonImg.removeClass('pokemon').addClass('eeveeBattle');
 
 
-  });
-
-  $td10.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('victini');
-    $right.text('Victini');
-    $pokemonImg.removeClass('pokemon').addClass('victiniBattle');
+ });
 
 
-  });
 
-  $td13.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('caterpie');
-    $right.text('Caterpie');
-    $pokemonImg.removeClass('pokemon').addClass('caterpieBattle');
-
-
-  });
-
-  $td16.on('click', function() {
-    alert('Add new home');
-    $(this).removeClass('pokeball').addClass('oshawott');
-    $right.text('Oshawott');
-    $pokemonImg.removeClass('pokemon').addClass('oshawottBattle');
+ $td6.on('click', function() {
+ alert('Add new home');
+ $(this).removeClass('pokeball').addClass('charmander');
+ $right.text('Charmander');
+ $pokemonImg.removeClass('pokemon').addClass('charmanderBattle');
 
 
-  });
+   });
+
+ $td7.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('jigglypuff');
+   $right.text('Jigglypuff');
+   $pokemonImg.removeClass('pokemon').addClass('jigglypuffBattle');
+
+
+ });
+
+ $td9.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('gengar');
+   $right.text('Gengar');
+   $pokemonImg.removeClass('pokemon').addClass('gengarBattle');
+
+
+ });
+
+ $td10.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('victini');
+   $right.text('Victini');
+   $pokemonImg.removeClass('pokemon').addClass('victiniBattle');
+
+
+ });
+
+ $td13.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('caterpie');
+   $right.text('Caterpie');
+   $pokemonImg.removeClass('pokemon').addClass('caterpieBattle');
+
+
+ });
+
+ $td14.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('squirtle');
+   $right.text('Squirtle');
+   $pokemonImg.removeClass('pokemon').addClass('squirtleBattle');
+
+
+ });
+
+ $td16.on('click', function() {
+   alert('Add new home');
+   $(this).removeClass('pokeball').addClass('oshawott');
+   $right.text('Oshawott');
+   $pokemonImg.removeClass('pokemon').addClass('oshawottBattle');
+
+
+ });
+
 
 
 
