@@ -1,5 +1,19 @@
 $(document).ready(function() {
 
+  alert('Ash is missing and Pikachu has to find him. Help Pikachu find Ash before he is defeated by other pokemon hidden in the map')
+
+// function music() {
+//
+//   var win = new Audio('music/Pokemon GO - Main Theme.mid');
+//     win.loop = true;
+//     win.play();
+//
+//
+//  }
+//
+// music();
+
+
 
   var $td1 = $('#td1')
   var $td2 = $('#td2')
@@ -33,7 +47,7 @@ $(document).ready(function() {
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('bulbasaur');
     $right.text('Bulbasaur');
-    $pokemonImg.removeClass('pokemon').addClass('bulbasaurBattle');
+    $pokemonImg.removeClass().addClass('bulbasaurBattle');
 
 
 
@@ -43,7 +57,7 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('tepig');
    $right.text('Tepig');
-   $pokemonImg.removeClass('pokemon').addClass('tepigBattle');
+   $pokemonImg.removeClass().addClass('tepigBattle');
 
 
  });
@@ -54,7 +68,7 @@ $(document).ready(function() {
 
    $(this).removeClass('pokeball').addClass('eevee');
    $right.text('Eevee');
-   $pokemonImg.removeClass('pokemon').addClass('eeveeBattle');
+   $pokemonImg.removeClass().addClass('eeveeBattle');
 
 
  });
@@ -65,7 +79,7 @@ $(document).ready(function() {
  alert('You have encountered another Pokemon. Click button to battle!');
  $(this).removeClass('pokeball').addClass('charmander');
  $right.text('Charmander');
- $pokemonImg.removeClass('pokemon').addClass('charmanderBattle');
+ $pokemonImg.removeClass().addClass('charmanderBattle');
 
 
    });
@@ -74,7 +88,7 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('jigglypuff');
    $right.text('Jigglypuff');
-   $pokemonImg.removeClass('pokemon').addClass('jigglypuffBattle');
+   $pokemonImg.removeClass().addClass('jigglypuffBattle');
 
 
  });
@@ -83,7 +97,7 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('gengar');
    $right.text('Gengar');
-   $pokemonImg.removeClass('pokemon').addClass('gengarBattle');
+   $pokemonImg.removeClass().addClass('gengarBattle');
 
 
  });
@@ -92,7 +106,7 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('victini');
    $right.text('Victini');
-   $pokemonImg.removeClass('pokemon').addClass('victiniBattle');
+   $pokemonImg.removeClass().addClass('victiniBattle');
 
 
  });
@@ -101,7 +115,7 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('caterpie');
    $right.text('Caterpie');
-   $pokemonImg.removeClass('pokemon').addClass('caterpieBattle');
+   $pokemonImg.removeClass().addClass('caterpieBattle');
 
 
  });
@@ -110,7 +124,7 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('squirtle');
    $right.text('Squirtle');
-   $pokemonImg.removeClass('pokemon').addClass('squirtleBattle');
+   $pokemonImg.removeClass().addClass('squirtleBattle');
 
 
  });
@@ -119,16 +133,18 @@ $(document).ready(function() {
    alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('oshawott');
    $right.text('Oshawott');
-   $pokemonImg.removeClass('pokemon').addClass('oshawottBattle');
+   $pokemonImg.removeClass().addClass('oshawottBattle');
 
 
  });
 
  $td5.on('click', function() {
 
+   $(this).removeClass().addClass('ash');
+
    alert('Congratulations! You have found Ash. Click OK to start a new game');
 
-   $(this).removeClass('pokeball').addClass('ash');
+
    reset();
 
 
@@ -139,7 +155,7 @@ $(document).ready(function() {
 
    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
-   $(this).removeClass('pokeball').addClass('potion');
+   $(this).removeClass().addClass('potion');
 
    var width = 0;
 
@@ -150,7 +166,7 @@ $(document).ready(function() {
 
    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
-   $(this).removeClass('pokeball').addClass('potion');
+   $(this).removeClass().addClass('potion');
 
    var width = 0;
 
@@ -163,7 +179,7 @@ $(document).ready(function() {
 
    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
-   $(this).removeClass('pokeball').addClass('potion');
+   $(this).removeClass().addClass('potion');
 
    var width = 0;
 
@@ -174,7 +190,7 @@ $(document).ready(function() {
 
    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
-   $(this).removeClass('pokeball').addClass('potion');
+   $(this).removeClass().addClass('potion');
 
    var width = 0;
 
@@ -186,7 +202,7 @@ $td15.on('click', function() {
 
   alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
-  $(this).removeClass('pokeball').addClass('potion');
+  $(this).removeClass().addClass('potion');
 
   var width = 0;
 
@@ -229,12 +245,21 @@ if (elem1.style.width <= 0 + '%') {
 
     elem1.style.width = 100 + '%';
 
+    function experience() {
 
-}
+    var elem3 = document.getElementById("expPikachu");
 
-if (elem.style.width <= 0 + '%') {
+    width += 10 ;
 
-    alert('Pikachu has fainited!, click ok to start a new game');
+        elem3.style.width = width + '%';
+
+
+    }
+
+
+} else if (elem.style.width <= 0 + '%') {
+
+    alert('Pikachu has fainted!, click ok to start a new game');
 
     reset()
 
@@ -248,7 +273,7 @@ if (elem.style.width <= 0 + '%') {
 $dicebutton.on('click', function() {
 
   rolldice();
-
+  console.log("click");
 
 })
 
@@ -288,5 +313,18 @@ width += 10 ;
 
 
 }
+
+function experience() {
+
+var elem3 = document.getElementById("expPikachu");
+
+width += 10 ;
+
+    elem3.style.width = width + '%';
+
+
+}
+
+
 
 });
