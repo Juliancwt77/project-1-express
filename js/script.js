@@ -23,10 +23,11 @@ $(document).ready(function() {
 
 
   $td1.on('click', function() {
-   alert('You have encountered another Pokemon. Click button to battle!');
-   $(this).removeClass('pokeball').addClass('bulbasaur');
-   $right.text('Bulbasaur');
-   $pokemonImg.removeClass('pokemon').addClass('bulbasaurBattle');
+
+    alert('You have encountered another Pokemon. Click button to battle!');
+    $(this).removeClass('pokeball').addClass('bulbasaur');
+    $right.text('Bulbasaur');
+    $pokemonImg.removeClass('pokemon').addClass('bulbasaurBattle');
 
 
 
@@ -42,7 +43,9 @@ $(document).ready(function() {
  });
 
  $td4.on('click', function() {
+
    alert('You have encountered another Pokemon. Click button to battle!');
+
    $(this).removeClass('pokeball').addClass('eevee');
    $right.text('Eevee');
    $pokemonImg.removeClass('pokemon').addClass('eeveeBattle');
@@ -115,15 +118,91 @@ $(document).ready(function() {
 
  });
 
+ $td5.on('click', function() {
+
+   alert('Congratulations! You have found Ash. Click OK to start a new game');
+
+   $(this).removeClass('pokeball').addClass('ash');
+
+
+
+ });
+
+ $td3.on('click', function() {
+
+   alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+   $(this).removeClass('pokeball').addClass('potion');
+
+   var width = 0;
+
+    move3();
+ });
+
+ $td8.on('click', function() {
+
+   alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+   $(this).removeClass('pokeball').addClass('potion');
+
+   var width = 0;
+
+    move3();
+
+ });
+
+
+ $td11.on('click', function() {
+
+   alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+   $(this).removeClass('pokeball').addClass('potion');
+
+   var width = 0;
+
+    move3();
+ });
+
+ $td12.on('click', function() {
+
+   alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+   $(this).removeClass('pokeball').addClass('potion');
+
+   var width = 0;
+
+    move3();
+
+})
+
+$td15.on('click', function() {
+
+  alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+  $(this).removeClass('pokeball').addClass('potion');
+
+  var width = 0;
+
+   move3();
+
+})
+
+
+
 function rolldice() {
 
   var $die1 = $("#die1");
   var $die2 = $("#die2");
   var $d1 = Math.floor(Math.random() * 6) + 1;
   var $d2 = Math.floor(Math.random() * 6) + 1;
+  var elem1 = document.getElementById("healthPokemon");
+  var elem = document.getElementById("healthPikachu");
 
   $die1.text($d1);
   $die2.text($d2);
+
+
+
 
 if ( $d2 > $d1 ) {
 
@@ -131,67 +210,77 @@ if ( $d2 > $d1 ) {
 
   }
 
-
-
 else if ($d1 > $d2) {
 
     move2();
 
+}
+
+if (elem1.style.width <= 0 + '%') {
+
+    alert('Pikachu wins!, Click another box to continue');
+
+    elem1.style.width = 100 + '%';
+
 
 }
+
+if (elem.style.width <= 0 + '%') {
+
+    alert('Pikachu has fainited!, please restart Game');
+
+
+
+
+}
+
+
+
 }
 
 $dicebutton.on('click', function() {
 
   rolldice();
 
+
+  console.log('clicked')
 })
+
+
+var width = 100;
+
+
 
 
 function move() {
 
-    var elem = document.getElementById("healthPikachu");
-    var width = 100;
-    // var id = setInterval(frame, 1000);
-    // function frame() {
-    //     if (width <= 0) {
-    //         clearInterval(id);
-    //   }  else {
+var elem = document.getElementById("healthPikachu");
             width -= 10 ;
+
             elem.style.width = width + '%';
-//         }
-//
-// // }
+
 }
 
 function move2() {
 
-    var elem = document.getElementById("healthPokemon");
-    var width = 100;
-    // var id = setInterval(frame, 1000);
-    // function frame() {
-    //     if (width <= 0) {
-    //         clearInterval(id);
-    //   }  else {
-            width -= 10 ;
-            elem.style.width = width + '%';
-//         }
-//
-// // }
+var elem1 = document.getElementById("healthPokemon");
+
+width -= 10 ;
+
+    elem1.style.width = width + '%';
+
+
 }
 
+function move3() {
 
+var elem = document.getElementById("healthPikachu");
 
+width += 10 ;
 
+    elem.style.width = width + '%';
+    console.log('width', width)
 
-
-
-
-
-
-
-
-
-
+}
 
 });

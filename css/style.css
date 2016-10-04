@@ -287,3 +287,17 @@ background-repeat: no-repeat;
      background-size: contain;
      background-repeat: no-repeat;
    }
+
+   .ash {
+     background-image: url("/image/ash.gif");
+     background-size: contain;
+     background-repeat: no-repeat;
+
+   }
+
+   .potion {
+     background-image: url("/image/potion.png");
+     background-size: contain;
+     background-repeat: no-repeat;
+
+   }
