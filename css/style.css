@@ -18,7 +18,7 @@ border: 1px solid #cccccc;
 display: inline-block;
 width: 15%;
 margin-left: 5px;
-height: 600px;
+height: 550px;
 border-radius: 5px;
 float: left;
 }
@@ -35,7 +35,7 @@ border-radius: 5px;
 border: 1px solid #cccccc;
 display: inline-block;
 width: 15%;
-height: 600px;
+height: 550px;
 border-radius: 5px;
 float: right;
 margin-right: 5px;
@@ -45,8 +45,12 @@ margin-right: 5px;
 border: 1px solid #cccccc;
 display: inline-block;
 width: 65%;
-height: 200px;
+height: 150px;
 border-radius: 5px;
+margin-top: 20px;
+margin-bottom: 10px;
+background-color: black;
+color: red;
 }
 
 table {
@@ -75,12 +79,30 @@ font-size: 50px;
             }
 
 .dice {
-border: 1px solid #cccccc;
-height: 60px;
-width: 40px;
-font-size: 5px;
-display: inline-block;;
+    text-align: center;
+  	width:60px;
+    height: 60px;
+  	background:#F5F5F5;
+  	border:#999 1px solid;
+  	padding:10px;
+  	font-size:30px;
+    display: inline-block;;
+    margin:5px;
 }
+
+#die1 #die2 {
+
+  text-align: center;
+  width:32px;
+  height: 32px;
+  background:#F5F5F5;
+  border:#999 1px solid;
+
+  font-size:15px;
+
+
+}
+
 
 .pikachu {
 height: 100px;
