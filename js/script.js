@@ -1,5 +1,5 @@
 $(document).ready(function() {
-  alert("Everything is ready, let's do this");
+
 
   var $td1 = $('#td1')
   var $td2 = $('#td2')
@@ -19,10 +19,11 @@ $(document).ready(function() {
   var $td16 = $('#td16')
   var $pokemonImg = $('div .pokemon')
   var $right = $('.right h1')
+  var $dicebutton = $('#battle')
 
 
   $td1.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('bulbasaur');
    $right.text('Bulbasaur');
    $pokemonImg.removeClass('pokemon').addClass('bulbasaurBattle');
@@ -32,7 +33,7 @@ $(document).ready(function() {
  });
 
  $td2.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('tepig');
    $right.text('Tepig');
    $pokemonImg.removeClass('pokemon').addClass('tepigBattle');
@@ -41,7 +42,7 @@ $(document).ready(function() {
  });
 
  $td4.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('eevee');
    $right.text('Eevee');
    $pokemonImg.removeClass('pokemon').addClass('eeveeBattle');
@@ -52,7 +53,7 @@ $(document).ready(function() {
 
 
  $td6.on('click', function() {
- alert('Add new home');
+ alert('You have encountered another Pokemon. Click button to battle!');
  $(this).removeClass('pokeball').addClass('charmander');
  $right.text('Charmander');
  $pokemonImg.removeClass('pokemon').addClass('charmanderBattle');
@@ -61,7 +62,7 @@ $(document).ready(function() {
    });
 
  $td7.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('jigglypuff');
    $right.text('Jigglypuff');
    $pokemonImg.removeClass('pokemon').addClass('jigglypuffBattle');
@@ -70,7 +71,7 @@ $(document).ready(function() {
  });
 
  $td9.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('gengar');
    $right.text('Gengar');
    $pokemonImg.removeClass('pokemon').addClass('gengarBattle');
@@ -79,7 +80,7 @@ $(document).ready(function() {
  });
 
  $td10.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('victini');
    $right.text('Victini');
    $pokemonImg.removeClass('pokemon').addClass('victiniBattle');
@@ -88,7 +89,7 @@ $(document).ready(function() {
  });
 
  $td13.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('caterpie');
    $right.text('Caterpie');
    $pokemonImg.removeClass('pokemon').addClass('caterpieBattle');
@@ -97,7 +98,7 @@ $(document).ready(function() {
  });
 
  $td14.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('squirtle');
    $right.text('Squirtle');
    $pokemonImg.removeClass('pokemon').addClass('squirtleBattle');
@@ -106,7 +107,7 @@ $(document).ready(function() {
  });
 
  $td16.on('click', function() {
-   alert('Add new home');
+   alert('You have encountered another Pokemon. Click button to battle!');
    $(this).removeClass('pokeball').addClass('oshawott');
    $right.text('Oshawott');
    $pokemonImg.removeClass('pokemon').addClass('oshawottBattle');
@@ -114,16 +115,76 @@ $(document).ready(function() {
 
  });
 
+function rolldice() {
 
+  var $die1 = $("#die1");
+  var $die2 = $("#die2");
+  var $d1 = Math.floor(Math.random() * 6) + 1;
+  var $d2 = Math.floor(Math.random() * 6) + 1;
 
+  $die1.text($d1);
+  $die2.text($d2);
 
-  function rolldice() {
-    var min = 1;
-    var max = 6;
+if ( $d2 > $d1 ) {
+
+      move();
 
   }
 
-  // math.random(min, max)
+
+
+else if ($d1 > $d2) {
+
+    move2();
+
+
+}
+}
+
+$dicebutton.on('click', function() {
+
+  rolldice();
+
+})
+
+
+function move() {
+
+    var elem = document.getElementById("healthPikachu");
+    var width = 100;
+    // var id = setInterval(frame, 1000);
+    // function frame() {
+    //     if (width <= 0) {
+    //         clearInterval(id);
+    //   }  else {
+            width -= 10 ;
+            elem.style.width = width + '%';
+//         }
+//
+// // }
+}
+
+function move2() {
+
+    var elem = document.getElementById("healthPokemon");
+    var width = 100;
+    // var id = setInterval(frame, 1000);
+    // function frame() {
+    //     if (width <= 0) {
+    //         clearInterval(id);
+    //   }  else {
+            width -= 10 ;
+            elem.style.width = width + '%';
+//         }
+//
+// // }
+}
+
+
+
+
+
+
 
 
 
