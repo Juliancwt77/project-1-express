@@ -114,6 +114,11 @@ height: 100px;
 width: 100px;
 }
 
+.raichu {
+height: 100px;
+width: 100px;
+}
+
 .pokemon {
 height: 100px;
 width: 100px;
@@ -296,7 +301,7 @@ background-repeat: no-repeat;
    }
 
    .potion {
-     background-image: url("/image/potion.png");
+     background-image: url("/image/Potion.png");
      background-size: contain;
      background-repeat: no-repeat;
 

@@ -21,6 +21,12 @@ $(document).ready(function() {
   var $right = $('.right h1')
   var $dicebutton = $('#battle')
 
+  function reset() {
+
+  location.reload();
+
+}
+
 
   $td1.on('click', function() {
 
@@ -123,6 +129,7 @@ $(document).ready(function() {
    alert('Congratulations! You have found Ash. Click OK to start a new game');
 
    $(this).removeClass('pokeball').addClass('ash');
+   reset();
 
 
 
@@ -227,9 +234,9 @@ if (elem1.style.width <= 0 + '%') {
 
 if (elem.style.width <= 0 + '%') {
 
-    alert('Pikachu has fainited!, please restart Game');
+    alert('Pikachu has fainited!, click ok to start a new game');
 
-
+    reset()
 
 
 }
@@ -243,7 +250,6 @@ $dicebutton.on('click', function() {
   rolldice();
 
 
-  console.log('clicked')
 })
 
 
@@ -279,7 +285,7 @@ var elem = document.getElementById("healthPikachu");
 width += 10 ;
 
     elem.style.width = width + '%';
-    console.log('width', width)
+
 
 }
 
