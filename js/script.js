@@ -1,17 +1,38 @@
 $(document).ready(function() {
 
+var win = new Audio('music/main-theme.mp3');
+
+  function music() {
 
 
-  // function music() {
-  //
-  //   var win = new Audio('music/Pokemon GO - Main Theme.mid');
-  //     win.loop = true;
-  //     win.play();
-  //
-  //
-  //  }
-  //
-  // music();
+      win.loop = true;
+      win.play();
+
+
+   }
+
+   function pauseMusic() {
+
+
+
+       win.pause();
+       win.currentTime = 0;
+
+
+    }
+
+// 
+// music();
+
+  function battlemusic() {
+
+    var win = new Audio('music/battle.mp3');
+      win.loop = true;
+      win.play();
+
+
+   }
+
 
 
 
@@ -51,7 +72,8 @@ $(document).ready(function() {
 
 
   $td1.on('click', function() {
-
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
 
     $(this).removeClass('pokeball').addClass('bulbasaur');
@@ -63,7 +85,8 @@ $(document).ready(function() {
   });
 
   $td2.on('click', function() {
-
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('tepig');
     $right.text('Tepig');
@@ -73,9 +96,9 @@ $(document).ready(function() {
   });
 
   $td4.on('click', function() {
-
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
-
     $(this).removeClass('pokeball').addClass('eevee');
     $right.text('Eevee');
     $pokemonImg.removeClass().addClass('eeveeBattle');
@@ -85,7 +108,9 @@ $(document).ready(function() {
 
 
 
-  $td6.on('click', function() {
+    $td6.on('click', function() {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('charmander');
     $right.text('Charmander');
@@ -95,6 +120,8 @@ $(document).ready(function() {
   });
 
   $td7.on('click', function() {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('jigglypuff');
     $right.text('Jigglypuff');
@@ -113,6 +140,8 @@ $(document).ready(function() {
   });
 
   $td10.on('click', function() {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('victini');
     $right.text('Victini');
@@ -122,6 +151,8 @@ $(document).ready(function() {
   });
 
   $td13.on('click', function() {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('caterpie');
     $right.text('Caterpie');
@@ -131,6 +162,8 @@ $(document).ready(function() {
   });
 
   $td14.on('click', function() {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('squirtle');
     $right.text('Squirtle');
@@ -140,6 +173,8 @@ $(document).ready(function() {
   });
 
   $td16.on('click', function() {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('oshawott');
     $right.text('Oshawott');
