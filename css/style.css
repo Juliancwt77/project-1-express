@@ -110,13 +110,24 @@ font-size: 50px;
 }
 
 .pikachu {
+-webkit-box-shadow:none;
 height: 100px;
 width: 100px;
+margin: auto;
+background-image: url("/image/Pikachu.png");
+background-size: contain;
+background-repeat: no-repeat;
 }
 
 .raichu {
+border: transparent;
 height: 100px;
 width: 100px;
+margin: auto;
+background-image: url("/image/Raichu.jpg");
+background-size: contain;
+background-repeat: no-repeat;
+
 }
 
 .pokemon {

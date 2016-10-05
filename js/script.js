@@ -32,7 +32,9 @@ $(document).ready(function() {
   var $td15 = $('#td15')
   var $td16 = $('#td16')
   var $pokemonImg = $('div .pokemon')
+  var $pikaImg = $('div .pikachu')
   var $right = $('.right h1')
+  var $left = $('.left h1')
   var $dicebutton = $('#battle')
 
   var widthpika = 100;
@@ -337,7 +339,12 @@ $(document).ready(function() {
 
     var elem3 = document.getElementById("expPikachu");
 
+
+
     if (elem3.style.width = 100 + '%') {
+
+        $pikaImg.removeClass('pikachu').addClass('raichu');
+        $left.text('Raichu');
 
         alert('Pikachu has eveloved into Raichu!')
 
