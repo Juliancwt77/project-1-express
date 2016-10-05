@@ -254,17 +254,17 @@ background-repeat: no-repeat;
 
   }
 
-  .gengar {
-    background-image: url("../image/gengar.png");
+  .dragonite {
+    background-image: url("../image/Dragonite.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
 
-  .gengarBattle {
+  .dragoniteBattle {
     height: 100px;
     width: 100px;
     margin: auto;
-    background-image: url("../image/gengar1.png");
+    background-image: url("../image/Dragonite1.png");
     background-size: contain;
     background-repeat: no-repeat;
 

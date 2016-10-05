@@ -244,22 +244,22 @@ music();
 
   $td9.on('click', function() {
 
-    // if ( !$(this).hasClass('pokeball')) {
-    //
-    //
-    //   alert('Please choose another box');
-    //
-    //
-    // }
+    if ( !$(this).hasClass('pokeball')) {
 
 
-    // else {
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('gengar');
-    $right.text('Gengar');
-    $pokemonImg.removeClass().addClass('gengarBattle');
+    $(this).removeClass('pokeball').addClass('dragonite');
+    $right.text('Dragonite');
+    $pokemonImg.removeClass().addClass('dragoniteBattle');
 
-// }
+}
   });
 
   $td10.on('click', function() {
