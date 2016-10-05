@@ -18,7 +18,7 @@ border: 1px solid #cccccc;
 display: inline-block;
 width: 15%;
 margin-left: 5px;
-height: 550px;
+height: 600px;
 border-radius: 5px;
 float: left;
 }
@@ -27,7 +27,7 @@ float: left;
 border: 1px solid #cccccc;
 display: inline-block;
 width: 65%;
-height: 400px;
+height: 600px;
 border-radius: 5px;
 }
 
@@ -35,7 +35,7 @@ border-radius: 5px;
 border: 1px solid #cccccc;
 display: inline-block;
 width: 15%;
-height: 550px;
+height: 600px;
 border-radius: 5px;
 float: right;
 margin-right: 5px;

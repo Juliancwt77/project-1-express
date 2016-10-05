@@ -1,6 +1,6 @@
 $(document).ready(function() {
 
-  alert('Ash is missing and Pikachu has to find him. Help Pikachu find Ash before he is defeated by other pokemon hidden in the map')
+
 
   // function music() {
   //
@@ -36,6 +36,7 @@ $(document).ready(function() {
   var $right = $('.right h1')
   var $left = $('.left h1')
   var $dicebutton = $('#battle')
+  var $startButton = $('#start')
 
   var widthpika = 100;
   var widthpokemon = 100;
@@ -151,10 +152,10 @@ $(document).ready(function() {
 
     $(this).removeClass().addClass('ash');
 
-    alert('Congratulations! You have found Ash. Click OK to start a new game');
+    alert('Congratulations! You have found Ash. Click the "Start Game" button to start a new game');
 
 
-    reset();
+
 
 
 
@@ -267,10 +268,10 @@ $(document).ready(function() {
 
     }else if (elem.style.width <= 0 + '%') {
 
-      alert('Pikachu has fainted!, click ok to start a new game');
+      alert('Pikachu has fainted!, click "Start Game" button to start a new game');
 
 
-      reset();
+
 
     }
 
@@ -287,7 +288,16 @@ $(document).ready(function() {
   })
 
 
-  // var width = 100;
+    $startButton.on('click', function() {
+
+      reset();
+
+      alert('Ash is missing and Pikachu has to find him. Help Pikachu find Ash before he is defeated by other pokemon hidden in the map')
+
+      })
+
+
+
 
 
 
