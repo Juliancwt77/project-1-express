@@ -5,7 +5,7 @@ Ash is captured by Team Rocket. He is located  in a building in the Map and Pika
 2) get pokeball image
 3) link to script.js Jquery and bootstrap
 4) draw containers 4x4
-5) when click on container , either Ash (1) , revival candy or to battle pokemon
+5) when click on container , either Ash (1) , revival candy or to battle pokemon 
 6) name , type , health , experience for pikachu
 7) name , type and health for other Pokémon
 8) during battle pikachu and Pokémon throw two dice. Compare highest against highest and second one against second one,
