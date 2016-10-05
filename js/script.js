@@ -50,6 +50,7 @@ $(document).ready(function() {
   $td1.on('click', function() {
 
     alert('You have encountered another Pokemon. Click button to battle!');
+
     $(this).removeClass('pokeball').addClass('bulbasaur');
     $right.text('Bulbasaur');
     $pokemonImg.removeClass().addClass('bulbasaurBattle');
@@ -59,6 +60,7 @@ $(document).ready(function() {
   });
 
   $td2.on('click', function() {
+
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('tepig');
     $right.text('Tepig');
@@ -234,11 +236,11 @@ $(document).ready(function() {
 
 
     if ($d2 > $d1) {
-      console.log('Pikachu wins');
+      console.log('Enemy wins');
       move();
 
     } else if ($d1 > $d2) {
-      console.log('Enemy wins');
+      console.log('Pikachu wins');
       move2();
 
     }
@@ -247,7 +249,11 @@ $(document).ready(function() {
 
       alert('Pikachu wins!, Click another box to continue');
 
-      elem1.style.width = 100 + '%';
+      widthpokemon  = 100;
+
+      elem1.style.width = widthpokemon + '%';
+
+      // document.getElementById('healthPokemon').reset();
 
       experience();
 
@@ -260,8 +266,8 @@ $(document).ready(function() {
 
       alert('Pikachu has fainted!, click ok to start a new game');
 
-      reset()
 
+      reset();
 
     }
 
@@ -294,7 +300,7 @@ $(document).ready(function() {
   function move2() {
 
     var elem1 = document.getElementById("healthPokemon");
-    console.log("Element 1" + elem1);
+    console.log("Element 1", elem1);
 
     widthpokemon  -= 10;
 
