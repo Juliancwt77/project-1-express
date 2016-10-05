@@ -1,40 +1,5 @@
 $(document).ready(function() {
 
-var win = new Audio('music/main-theme.mp3');
-
-  function music() {
-
-
-      win.loop = true;
-      win.play();
-
-
-   }
-
-   function pauseMusic() {
-
-
-
-       win.pause();
-       win.currentTime = 0;
-
-
-    }
-
-// 
-// music();
-
-  function battlemusic() {
-
-    var win = new Audio('music/battle.mp3');
-      win.loop = true;
-      win.play();
-
-
-   }
-
-
-
 
   var $td1 = $('#td1')
   var $td2 = $('#td2')
@@ -58,13 +23,97 @@ var win = new Audio('music/main-theme.mp3');
   var $left = $('.left h1')
   var $dicebutton = $('#battle')
   var $startButton = $('#start')
-
   var widthpika = 100;
   var widthpokemon = 100;
   var exp = 0;
 
+  var mainM = new Audio('music/main-theme.mp3');
+  var battleM = new Audio('music/battle.mp3');
+  var evolvedM = new Audio('music/pokemon-evolved.mp3');
+  var endM = new Audio('music/ending-theme.mp3');
+  var winM = new Audio('music/win.mp3');
+  var loseM = new Audio('music/lose.mp3');
+  var potionM = new Audio('music/potion.mp3');
 
-  function reset() {
+  function music() {
+
+    mainM.loop = true;
+      mainM.play();
+
+}
+
+   function pauseMusic() {
+
+       mainM.pause();
+       mainM.currentTime = 0;
+
+    }
+
+//
+music();
+
+  function battlemusic() {
+
+    battleM.loop = true;
+      battleM.play();
+
+
+   }
+
+   function pauseBattlemusic() {
+
+       battleM.pause();
+       battleM.currentTime = 0;
+
+    }
+
+    function evolvedMusic() {
+
+      evolvedM.play();
+
+
+    }
+
+    function endMusic() {
+
+      endM.loop = true;
+        endM.play();
+
+    }
+
+    function pauseEndMusic() {
+
+        endM.pause();
+        endM.currentTime = 0;
+
+    }
+
+
+        function winMusic() {
+
+          winM.play();
+
+
+        }
+
+        function loseMusic() {
+
+          loseM.play();
+
+
+        }
+
+        function potionMusic() {
+
+          potionM.play();
+
+
+        }
+
+
+
+
+    function reset() {
 
     location.reload();
 
@@ -185,6 +234,11 @@ var win = new Audio('music/main-theme.mp3');
 
   $td5.on('click', function() {
 
+    pauseBattlemusic();
+    pauseMusic();
+    endMusic();
+
+
     $(this).removeClass().addClass('ash');
 
     alert('Congratulations! You have found Ash. Click the "Start Game" button to start a new game');
@@ -197,24 +251,24 @@ var win = new Audio('music/main-theme.mp3');
   });
 
   $td3.on('click', function() {
-
+    pauseMusic();
+    pauseBattlemusic();
+    potionMusic();
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-
     $(this).removeClass().addClass('potion');
-
     var width = 0;
-
     move3();
+
   });
 
   $td8.on('click', function() {
 
+    pauseMusic();
+    pauseBattlemusic();
+    potionMusic();
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-
     $(this).removeClass().addClass('potion');
-
     var width = 0;
-
     move3();
 
   });
@@ -222,23 +276,25 @@ var win = new Audio('music/main-theme.mp3');
 
   $td11.on('click', function() {
 
+    pauseMusic();
+    pauseBattlemusic();
+    potionMusic();
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-
     $(this).removeClass().addClass('potion');
-
     var width = 0;
-
     move3();
+
   });
 
   $td12.on('click', function() {
 
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
+    pauseMusic();
+    pauseBattlemusic();
+    potionMusic();
     $(this).removeClass().addClass('potion');
-
     var width = 0;
-
     move3();
 
   })
@@ -247,10 +303,11 @@ var win = new Audio('music/main-theme.mp3');
 
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
+    pauseMusic();
+    pauseBattlemusic();
+    potionMusic();
     $(this).removeClass().addClass('potion');
-
     var width = 0;
-
     move3();
 
   })
@@ -279,6 +336,7 @@ var win = new Audio('music/main-theme.mp3');
 
     } else if ($d1 > $d2) {
       console.log('Pikachu wins');
+
       move2();
 
     }
@@ -286,6 +344,9 @@ var win = new Audio('music/main-theme.mp3');
     if (elem1.style.width <= 0 + '%') {
 
       alert('Pikachu wins!, Click another box to continue');
+
+      // pauseBattlemusic();
+      // winMusic();
 
       widthpokemon  = 100;
 
@@ -303,12 +364,11 @@ var win = new Audio('music/main-theme.mp3');
 
     }else if (elem.style.width <= 0 + '%') {
 
+      pauseBattlemusic()
+      loseMusic();
       alert('Pikachu has fainted!, click "Start Game" button to start a new game');
 
-
-
-
-    }
+      }
 
 
 
@@ -391,7 +451,10 @@ var win = new Audio('music/main-theme.mp3');
         $pikaImg.removeClass('pikachu').addClass('raichu');
         $left.text('Raichu');
 
-        alert('Pikachu has eveloved into Raichu!')
+        pauseBattlemusic()
+        evolvedMusic();
+        alert('Pikachu has eveloved into Raichu!');
+
 
   }
   }
