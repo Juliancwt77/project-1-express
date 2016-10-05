@@ -254,6 +254,8 @@ music();
 
 
     else {
+    pauseMusic();
+    battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('dragonite');
     $right.text('Dragonite');
