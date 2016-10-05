@@ -120,7 +120,24 @@ music();
   }
 
 
+
+
+
+
+
+
   $td1.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -129,11 +146,23 @@ music();
     $right.text('Bulbasaur');
     $pokemonImg.removeClass().addClass('bulbasaurBattle');
 
-
+}
 
   });
 
   $td2.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
+
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -141,10 +170,22 @@ music();
     $right.text('Tepig');
     $pokemonImg.removeClass().addClass('tepigBattle');
 
+}
 
   });
 
   $td4.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -152,12 +193,23 @@ music();
     $right.text('Eevee');
     $pokemonImg.removeClass().addClass('eeveeBattle');
 
-
+}
   });
 
 
 
     $td6.on('click', function() {
+
+      if ( !$(this).hasClass('pokeball')) {
+
+
+        alert('Please choose another box');
+
+
+      }
+
+
+      else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -165,10 +217,21 @@ music();
     $right.text('Charmander');
     $pokemonImg.removeClass().addClass('charmanderBattle');
 
-
+}
   });
 
   $td7.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -176,19 +239,41 @@ music();
     $right.text('Jigglypuff');
     $pokemonImg.removeClass().addClass('jigglypuffBattle');
 
-
+}
   });
 
   $td9.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('gengar');
     $right.text('Gengar');
     $pokemonImg.removeClass().addClass('gengarBattle');
 
-
+}
   });
 
   $td10.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -196,10 +281,21 @@ music();
     $right.text('Victini');
     $pokemonImg.removeClass().addClass('victiniBattle');
 
-
+}
   });
 
   $td13.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
@@ -207,32 +303,57 @@ music();
     $right.text('Caterpie');
     $pokemonImg.removeClass().addClass('caterpieBattle');
 
+  }
 
   });
 
   $td14.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('squirtle');
     $right.text('Squirtle');
     $pokemonImg.removeClass().addClass('squirtleBattle');
-
+}
 
   });
 
   $td16.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     battlemusic();
     alert('You have encountered another Pokemon. Click button to battle!');
     $(this).removeClass('pokeball').addClass('oshawott');
     $right.text('Oshawott');
     $pokemonImg.removeClass().addClass('oshawottBattle');
-
+  }
 
   });
 
   $td5.on('click', function() {
+
+
 
     pauseBattlemusic();
     pauseMusic();
@@ -254,6 +375,17 @@ music();
   });
 
   $td3.on('click', function() {
+
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
     pauseMusic();
     pauseBattlemusic();
     potionMusic();
@@ -261,11 +393,24 @@ music();
     $(this).removeClass().addClass('potion');
     var width = 0;
     move3();
+
+  }
 
   });
 
   $td8.on('click', function() {
 
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
+
     pauseMusic();
     pauseBattlemusic();
     potionMusic();
@@ -273,12 +418,25 @@ music();
     $(this).removeClass().addClass('potion');
     var width = 0;
     move3();
+
+  }
 
   });
 
 
   $td11.on('click', function() {
 
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
+
     pauseMusic();
     pauseBattlemusic();
     potionMusic();
@@ -286,11 +444,24 @@ music();
     $(this).removeClass().addClass('potion');
     var width = 0;
     move3();
+
+  }
 
   });
 
   $td12.on('click', function() {
 
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
+
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
     pauseMusic();
@@ -299,11 +470,24 @@ music();
     $(this).removeClass().addClass('potion');
     var width = 0;
     move3();
+
+  }
 
   })
 
   $td15.on('click', function() {
 
+    if ( !$(this).hasClass('pokeball')) {
+
+
+      alert('Please choose another box');
+
+
+    }
+
+
+    else {
+
     alert('Congratulations! You have found a potion. Pikachu health increase by 1');
 
     pauseMusic();
@@ -312,6 +496,8 @@ music();
     $(this).removeClass().addClass('potion');
     var width = 0;
     move3();
+
+  }
 
   })
 
