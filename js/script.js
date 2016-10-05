@@ -256,6 +256,7 @@ $(document).ready(function() {
       // document.getElementById('healthPokemon').reset();
 
       experience();
+      evolve();
 
 
 
@@ -278,6 +279,7 @@ $(document).ready(function() {
   $dicebutton.on('click', function() {
 
     rolldice();
+
     console.log("click");
 
   })
@@ -324,13 +326,23 @@ $(document).ready(function() {
 
     var elem3 = document.getElementById("expPikachu");
 
-    exp += 10;
+    exp += 100;
 
     elem3.style.width = exp + '%';
 
 
   }
 
+  function evolve() {
+
+    var elem3 = document.getElementById("expPikachu");
+
+    if (elem3.style.width = 100 + '%') {
+
+        alert('Pikachu has eveloved into Raichu!')
+
+  }
+  }
 
 
 });
