@@ -126,7 +126,7 @@ font-size: 50px;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/Pikachu.png");
+background-image: url("../image/Pikachu.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -136,7 +136,7 @@ border: transparent;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/Raichu.jpg");
+background-image: url("../image/Raichu.jpg");
 background-size: contain;
 background-repeat: no-repeat;
 
@@ -146,13 +146,13 @@ background-repeat: no-repeat;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/question_mark.png");
+background-image: url("../image/question_mark.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
 
 .pokeball {
-background-image: url("image/Pokeball.png");
+background-image: url("../image/Pokeball.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -162,7 +162,7 @@ font-size: 15px;
 }
 
 .bulbasaur {
-background-image: url("image/bulbasaur.png");
+background-image: url("../image/bulbasaur.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -171,13 +171,13 @@ background-repeat: no-repeat;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/bulbasaur1.png");
+background-image: url("../image/bulbasaur1.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
 
 .tepig {
-background-image: url("image/Tepig.png");
+background-image: url("../image/Tepig.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -192,7 +192,7 @@ background-repeat: no-repeat;
 }
 
 .jigglypuff {
-background-image: url("image/jigglypuff.jpg");
+background-image: url("../image/jigglypuff.jpg");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -201,13 +201,13 @@ background-repeat: no-repeat;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/jigglypuff1.jpg");
+background-image: url("../image/jigglypuff1.jpg");
 background-size: contain;
 background-repeat: no-repeat;
 }
 
 .victini {
-background-image: url("image/victini.png");
+background-image: url("../image/victini.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -216,14 +216,14 @@ background-repeat: no-repeat;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/victini1.png");
+background-image: url("../image/victini1.png");
 background-size: contain;
 background-repeat: no-repeat;
 
 }
 
 .caterpie {
-background-image: url("image/Caterpie.png");
+background-image: url("../image/Caterpie.png");
 background-size: contain;
 background-repeat: no-repeat;
 }
@@ -232,14 +232,14 @@ background-repeat: no-repeat;
 height: 100px;
 width: 100px;
 margin: auto;
-background-image: url("image/Caterpie1.png");
+background-image: url("../image/Caterpie1.png");
 background-size: contain;
 background-repeat: no-repeat;
 
 }
 
 .oshawott {
-  background-image: url("image/oshawott.png");
+  background-image: url("../image/oshawott.png");
   background-size: contain;
   background-repeat: no-repeat;
 }
@@ -248,14 +248,14 @@ background-repeat: no-repeat;
   height: 100px;
   width: 100px;
   margin: auto;
-  background-image: url("image/oshawott1.png");
+  background-image: url("../image/oshawott1.png");
   background-size: contain;
   background-repeat: no-repeat;
 
   }
 
   .gengar {
-    background-image: url("image/gengar.png");
+    background-image: url("../image/gengar.png");
     background-size: contain;
     background-repeat: no-repeat;
   }
@@ -264,14 +264,14 @@ background-repeat: no-repeat;
     height: 100px;
     width: 100px;
     margin: auto;
-    background-image: url("image/gengar1.png");
+    background-image: url("../image/gengar1.png");
     background-size: contain;
     background-repeat: no-repeat;
 
     }
 
     .eevee {
-      background-image: url("image/eevee.png");
+      background-image: url("../image/eevee.png");
       background-size: contain;
       background-repeat: no-repeat;
     }
@@ -280,14 +280,14 @@ background-repeat: no-repeat;
       height: 100px;
       width: 100px;
       margin: auto;
-      background-image: url("image/eevee1.png");
+      background-image: url("../image/eevee1.png");
       background-size: contain;
       background-repeat: no-repeat;
 
       }
 
       .charmander {
-     background-image: url("image/Charmander.png");
+     background-image: url("../image/Charmander.png");
      background-size: contain;
      background-repeat: no-repeat;
    }
@@ -296,13 +296,13 @@ background-repeat: no-repeat;
      height: 100px;
      width: 100px;
      margin: auto;
-     background-image: url("image/Charmander1.png");
+     background-image: url("../image/Charmander1.png");
      background-size: contain;
      background-repeat: no-repeat;
    }
 
    .squirtle {
-     background-image: url("image/Squirtle.png");
+     background-image: url("../image/Squirtle.png");
      background-size: contain;
      background-repeat: no-repeat;
    }
@@ -311,13 +311,13 @@ background-repeat: no-repeat;
      height: 100px;
      width: 100px;
      margin: auto;
-     background-image: url("image/Squirtle1.png");
+     background-image: url("../image/Squirtle1.png");
      background-size: contain;
      background-repeat: no-repeat;
    }
 
    .ash {
-     background-image: url("image/ash.gif");
+     background-image: url("../image/ash.gif");
      background-size: contain;
      background-repeat: no-repeat;
 
@@ -327,14 +327,14 @@ background-repeat: no-repeat;
      height: 100px;
      width: 100px;
      margin: auto;
-     background-image: url("image/ash.gif");
+     background-image: url("../image/ash.gif");
      background-size: contain;
      background-repeat: no-repeat;
 
    }
 
    .potion {
-     background-image: url("image/Potion.png");
+     background-image: url("../image/Potion.png");
      background-size: contain;
      background-repeat: no-repeat;
 
