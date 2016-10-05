@@ -240,6 +240,9 @@ music();
 
 
     $(this).removeClass().addClass('ash');
+    $right.text('Ash');
+    $pokemonImg.removeClass().addClass('ashWin');
+
 
     alert('Congratulations! You have found Ash. Click the "Start Game" button to start a new game');
 
@@ -449,10 +452,18 @@ music();
     if (elem3.style.width = 100 + '%') {
 
         $pikaImg.removeClass('pikachu').addClass('raichu');
+        var elem = document.getElementById("healthPikachu");
+
         $left.text('Raichu');
 
         pauseBattlemusic()
         evolvedMusic();
+
+
+        widthpika += 50;
+
+        elem.style.width = widthpika + '%';
+
         alert('Pikachu has eveloved into Raichu!');
 
 

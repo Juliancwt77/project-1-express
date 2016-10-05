@@ -7,10 +7,13 @@ border-radius: 5px;
 background-color: white;
 }
 
+
+
 .top {
 text-align: center;
 width: auto;
-height: 50px;
+height: 90px;
+background-color: white;
 }
 
 .left {
@@ -70,6 +73,15 @@ cursor: pointer;
 
 h1 {
 font-size: 50px;
+}
+
+#header {
+
+
+  background-size: contain;
+  background-repeat: no-repeat;
+
+
 }
 
 .progress-bar { display: inline;
@@ -305,6 +317,16 @@ background-repeat: no-repeat;
    }
 
    .ash {
+     background-image: url("/image/ash.gif");
+     background-size: contain;
+     background-repeat: no-repeat;
+
+   }
+
+   .ashWin {
+     height: 100px;
+     width: 100px;
+     margin: auto;
      background-image: url("/image/ash.gif");
      background-size: contain;
      background-repeat: no-repeat;
