@@ -38,82 +38,82 @@ $(document).ready(function() {
   function music() {
 
     mainM.loop = true;
-      mainM.play();
+    mainM.play();
 
-}
+  }
 
-   function pauseMusic() {
+  function pauseMusic() {
 
-       mainM.pause();
-       mainM.currentTime = 0;
+    mainM.pause();
+    mainM.currentTime = 0;
 
-    }
+  }
 
-//
-music();
+  //
+  music();
 
   function battlemusic() {
 
     battleM.loop = true;
-      battleM.play();
+    battleM.play();
 
 
-   }
+  }
 
-   function pauseBattlemusic() {
+  function pauseBattlemusic() {
 
-       battleM.pause();
-       battleM.currentTime = 0;
+    battleM.pause();
+    battleM.currentTime = 0;
 
-    }
+  }
 
-    function evolvedMusic() {
+  function evolvedMusic() {
 
-      evolvedM.play();
-
-
-    }
-
-    function endMusic() {
-
-      endM.loop = true;
-        endM.play();
-
-    }
-
-    function pauseEndMusic() {
-
-        endM.pause();
-        endM.currentTime = 0;
-
-    }
+    evolvedM.play();
 
 
-        function winMusic() {
+  }
 
-          winM.play();
+  function endMusic() {
 
+    endM.loop = true;
+    endM.play();
 
-        }
+  }
 
-        function loseMusic() {
+  function pauseEndMusic() {
 
-          loseM.play();
+    endM.pause();
+    endM.currentTime = 0;
 
-
-        }
-
-        function potionMusic() {
-
-          potionM.play();
+  }
 
 
-        }
+  function winMusic() {
+
+    winM.play();
+
+
+  }
+
+  function loseMusic() {
+
+    loseM.play();
+
+
+  }
+
+  function potionMusic() {
+
+    potionM.play();
+
+
+  }
 
 
 
 
-    function reset() {
+  function reset() {
 
     location.reload();
 
@@ -128,228 +128,198 @@ music();
 
   $td1.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+
+      $(this).removeClass('pokeball').addClass('bulbasaur');
+      $right.text('Bulbasaur');
+      $pokemonImg.removeClass().addClass('bulbasaurBattle');
+
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-
-    $(this).removeClass('pokeball').addClass('bulbasaur');
-    $right.text('Bulbasaur');
-    $pokemonImg.removeClass().addClass('bulbasaurBattle');
-
-}
 
   });
 
   $td2.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('tepig');
+      $right.text('Tepig');
+      $pokemonImg.removeClass().addClass('tepigBattle');
+
     }
-
-
-    else {
-
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('tepig');
-    $right.text('Tepig');
-    $pokemonImg.removeClass().addClass('tepigBattle');
-
-}
 
   });
 
   $td4.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('eevee');
+      $right.text('Eevee');
+      $pokemonImg.removeClass().addClass('eeveeBattle');
+
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('eevee');
-    $right.text('Eevee');
-    $pokemonImg.removeClass().addClass('eeveeBattle');
-
-}
   });
 
 
 
-    $td6.on('click', function() {
+  $td6.on('click', function() {
 
-      if ( !$(this).hasClass('pokeball')) {
-
-
-        alert('Please choose another box');
+    if (!$(this).hasClass('pokeball')) {
 
 
-      }
+      alert('Please choose another box');
 
 
-      else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('charmander');
-    $right.text('Charmander');
-    $pokemonImg.removeClass().addClass('charmanderBattle');
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('charmander');
+      $right.text('Charmander');
+      $pokemonImg.removeClass().addClass('charmanderBattle');
 
-}
+    }
   });
 
   $td7.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('jigglypuff');
+      $right.text('Jigglypuff');
+      $pokemonImg.removeClass().addClass('jigglypuffBattle');
+
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('jigglypuff');
-    $right.text('Jigglypuff');
-    $pokemonImg.removeClass().addClass('jigglypuffBattle');
-
-}
   });
 
   $td9.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('dragonite');
+      $right.text('Dragonite');
+      $pokemonImg.removeClass().addClass('dragoniteBattle');
+
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('dragonite');
-    $right.text('Dragonite');
-    $pokemonImg.removeClass().addClass('dragoniteBattle');
-
-}
   });
 
   $td10.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('victini');
+      $right.text('Victini');
+      $pokemonImg.removeClass().addClass('victiniBattle');
+
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('victini');
-    $right.text('Victini');
-    $pokemonImg.removeClass().addClass('victiniBattle');
-
-}
   });
 
   $td13.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('caterpie');
+      $right.text('Caterpie');
+      $pokemonImg.removeClass().addClass('caterpieBattle');
+
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('caterpie');
-    $right.text('Caterpie');
-    $pokemonImg.removeClass().addClass('caterpieBattle');
-
-  }
 
   });
 
   $td14.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('squirtle');
+      $right.text('Squirtle');
+      $pokemonImg.removeClass().addClass('squirtleBattle');
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('squirtle');
-    $right.text('Squirtle');
-    $pokemonImg.removeClass().addClass('squirtleBattle');
-}
 
   });
 
   $td16.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      battlemusic();
+      alert('You have encountered another Pokemon. Click button to battle!');
+      $(this).removeClass('pokeball').addClass('oshawott');
+      $right.text('Oshawott');
+      $pokemonImg.removeClass().addClass('oshawottBattle');
     }
-
-
-    else {
-    pauseMusic();
-    battlemusic();
-    alert('You have encountered another Pokemon. Click button to battle!');
-    $(this).removeClass('pokeball').addClass('oshawott');
-    $right.text('Oshawott');
-    $pokemonImg.removeClass().addClass('oshawottBattle');
-  }
 
   });
 
@@ -378,128 +348,113 @@ music();
 
   $td3.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+      pauseMusic();
+      pauseBattlemusic();
+      potionMusic();
+      alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+      $(this).removeClass().addClass('potion');
+      var width = 0;
+      move3();
+
     }
-
-
-    else {
-    pauseMusic();
-    pauseBattlemusic();
-    potionMusic();
-    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-    $(this).removeClass().addClass('potion');
-    var width = 0;
-    move3();
-
-  }
 
   });
 
   $td8.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+
+      pauseMusic();
+      pauseBattlemusic();
+      potionMusic();
+      alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+      $(this).removeClass().addClass('potion');
+      var width = 0;
+      move3();
+
     }
-
-
-    else {
-
-    pauseMusic();
-    pauseBattlemusic();
-    potionMusic();
-    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-    $(this).removeClass().addClass('potion');
-    var width = 0;
-    move3();
-
-  }
 
   });
 
 
   $td11.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+
+      pauseMusic();
+      pauseBattlemusic();
+      potionMusic();
+      alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+      $(this).removeClass().addClass('potion');
+      var width = 0;
+      move3();
+
     }
-
-
-    else {
-
-    pauseMusic();
-    pauseBattlemusic();
-    potionMusic();
-    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-    $(this).removeClass().addClass('potion');
-    var width = 0;
-    move3();
-
-  }
 
   });
 
   $td12.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+
+      alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+      pauseMusic();
+      pauseBattlemusic();
+      potionMusic();
+      $(this).removeClass().addClass('potion');
+      var width = 0;
+      move3();
+
     }
-
-
-    else {
-
-    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-
-    pauseMusic();
-    pauseBattlemusic();
-    potionMusic();
-    $(this).removeClass().addClass('potion');
-    var width = 0;
-    move3();
-
-  }
 
   })
 
   $td15.on('click', function() {
 
-    if ( !$(this).hasClass('pokeball')) {
+    if (!$(this).hasClass('pokeball')) {
 
 
       alert('Please choose another box');
 
 
+    } else {
+
+      alert('Congratulations! You have found a potion. Pikachu health increase by 1');
+
+      pauseMusic();
+      pauseBattlemusic();
+      potionMusic();
+      $(this).removeClass().addClass('potion');
+      var width = 0;
+      move3();
+
     }
-
-
-    else {
-
-    alert('Congratulations! You have found a potion. Pikachu health increase by 1');
-
-    pauseMusic();
-    pauseBattlemusic();
-    potionMusic();
-    $(this).removeClass().addClass('potion');
-    var width = 0;
-    move3();
-
-  }
 
   })
 
@@ -539,7 +494,7 @@ music();
       // pauseBattlemusic();
       // winMusic();
 
-      widthpokemon  = 100;
+      widthpokemon = 100;
 
       elem1.style.width = widthpokemon + '%';
 
@@ -553,13 +508,13 @@ music();
 
 
 
-    }else if (elem.style.width <= 0 + '%') {
+    } else if (elem.style.width <= 0 + '%') {
 
       pauseBattlemusic()
       loseMusic();
       alert('Pikachu has fainted!, click "Start Game" button to start a new game');
 
-      }
+    }
 
 
 
@@ -574,13 +529,13 @@ music();
   })
 
 
-    $startButton.on('click', function() {
+  $startButton.on('click', function() {
 
-      reset();
+    reset();
 
-      alert('Ash is missing and Pikachu has to find him. Help Pikachu find Ash before he is defeated by other pokemon hidden in the map')
+    alert('Ash is missing and Pikachu has to find him. Help Pikachu find Ash before he is defeated by other pokemon hidden in the map')
 
-      })
+  })
 
 
 
@@ -593,7 +548,7 @@ music();
     var elem = document.getElementById("healthPikachu");
     widthpika -= 10;
 
-    elem.style.width = widthpika  + '%';
+    elem.style.width = widthpika + '%';
 
   }
 
@@ -602,7 +557,7 @@ music();
     var elem1 = document.getElementById("healthPokemon");
     console.log("Element 1", elem1);
 
-    widthpokemon  -= 10;
+    widthpokemon -= 10;
 
     elem1.style.width = widthpokemon + '%';
 
@@ -639,23 +594,23 @@ music();
 
     if (elem3.style.width = 100 + '%') {
 
-        $pikaImg.removeClass('pikachu').addClass('raichu');
-        var elem = document.getElementById("healthPikachu");
+      $pikaImg.removeClass('pikachu').addClass('raichu');
+      var elem = document.getElementById("healthPikachu");
 
-        $left.text('Raichu');
+      $left.text('Raichu');
 
-        pauseBattlemusic()
-        evolvedMusic();
-
-
-        widthpika += 50;
-
-        elem.style.width = widthpika + '%';
-
-        alert('Pikachu has eveloved into Raichu!');
+      pauseBattlemusic()
+      evolvedMusic();
 
 
-  }
+      widthpika += 50;
+
+      elem.style.width = widthpika + '%';
+
+      alert('Pikachu has eveloved into Raichu!');
+
+
+    }
   }
 
 
