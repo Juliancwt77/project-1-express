@@ -1,25 +1,21 @@
-Ash is captured by Team Rocket. He is located  in a building in the Map and Pikachu has to rescue him.
+Ash is captured by Team Rocket. He is hidden somewhere in the map and Pikachu has to rescue him. However, there are other rival pokemons hidden in the map as as well. The purpose of the game is to find Ash before Pikachu's health reaches zero.
+
+Game play:
+
+1) If Pikachu meets another rival pokemon, he needs to battle using the dice provided on the screen.
+2) If Pikachu picks up a potion, its health will increase by 10%
+3) If Pikachu finds Ash, the game will end.
 
 
-1) get image for pikachu and other pokemons
-2) get pokeball image
-3) link to script.js Jquery and bootstrap
-4) draw containers 4x4
-5) when click on container , either Ash (1) , revival candy or to battle pokemon 
-6) name , type , health , experience for pikachu
-7) name , type and health for other Pokémon
-8) during battle pikachu and Pokémon throw two dice. Compare highest against highest and second one against second one,
-Bonus: if pikachu is weak against the other type , minus one from from highest dice , if strong then add one.
+How the dices works:
+
+Everytime the dices are rolled, the higher of the two will win and health will be deducted from the other party. The battle ends once the health of either parties reaches zero.
+
+Scenario 1:
+
+If Pikachu's health reaches zero, the game will end. Click "Start Game" to start a new game.
 
 
-8) if either one lose , max 2 points minimum one point, if pikachu dice and the other Pokémon dice has the same number , draw.  
+Scenario 2:
 
-9) every win will add one experience point
-
-9) if experience reach 10/10 , will evolved to rika. When rolled the hugest dice  will immediately add one point.
-
-10) if the health of pikachu reach zero, game over. Can either continue game or reset game.
-
-Only 2 lives to Continue game , health become 5 for continue game. Reset game is back to full health and lose any experience.
-
-11) when ash is found. Pop up , pikachu has found ash and game over. Must reset game.
+If Pikachu wins, Pikachu will gain experience points. Once the experience points reach full bar, Pikachu can evolved into Raichu. Pick another box to continue the game till you find Ash.
