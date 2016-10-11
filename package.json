@@ -14,5 +14,13 @@
   },
   "author": "",
   "license": "ISC",
-  "description": ""
+  "description": "Ash is captured by Team Rocket. He is hidden somewhere in the map and Pikachu has to rescue him. However, there are other rival pokemons hidden in the map as as well. The purpose of the game is to find Ash before Pikachu's health reaches zero.",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Juliancwt77/project-1-express.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Juliancwt77/project-1-express/issues"
+  },
+  "homepage": "https://github.com/Juliancwt77/project-1-express#readme"
 }
