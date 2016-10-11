@@ -16,5 +16,7 @@ app.get('/', function (req, res) {
   res.render('index')
 })
 
+app.use(express.static(__dirname + '/public'));
+
 app.listen(port)
 console.log('server running at http://localhost:' + port + '/')
