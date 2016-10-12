@@ -5,6 +5,9 @@ var express = require('express')
 var app = express()
 var port = 3000
 
+
+var routes = require('./routes/contact')
+
 // require path-name
 
 
@@ -17,6 +20,8 @@ app.get('/', function (req, res) {
 })
 
 app.use(express.static(__dirname + '/public'));
+
+app.use('/', routes)
 
 app.listen(port)
 console.log('server running at http://localhost:' + port + '/')
